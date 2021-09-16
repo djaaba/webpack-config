@@ -17,6 +17,7 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/index.js',
+        main2: './src/app.ts',
         // analytics: './src/analytics.js'
     },
     output: {
@@ -52,7 +53,15 @@ module.exports = {
             {
                 test: /\.pug$/,
                 use: ['pug-loader']
-            }
-        ]
-    }
+            },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+        ],
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
 }

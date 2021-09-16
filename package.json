@@ -12,6 +12,8 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.4.3",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
@@ -22,5 +24,8 @@
     "start": "webpack serve --mode development"
   },
   "author": "Veselov <ddanil82@bk.ru>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
